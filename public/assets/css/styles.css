@@ -1,0 +1,6 @@
+.container-form{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
