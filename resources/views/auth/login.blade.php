@@ -44,8 +44,9 @@
     <!-- Inicio sesion -->
     <div id="register" class="animate form ">
     <section class="login_content">
-        <form>
+        <form method="POST" action="{{ route('login.post') }}">
           @csrf
+          @method('POST')
             <h1>Inicio de Sesion</h1>
             
             <div>
