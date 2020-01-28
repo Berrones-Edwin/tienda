@@ -1,6 +1,4 @@
-.container-form{
-    width: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.img-circle.profile_img {
+    width: 50%;
+    margin-left: 40%;
 }

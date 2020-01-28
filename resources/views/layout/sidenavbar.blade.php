@@ -9,11 +9,11 @@
     <!-- menu profile quick info -->
     <div class="profile clearfix">
         <div class="profile_pic">
-        <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+        <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=940" alt="..." class="img-circle profile_img">
         </div>
         <div class="profile_info">
-        <span>Welcome,</span>
-        <h2>John Doe</h2>
+        <span>Bienvenido,</span>
+        <h2>{{ Auth::user()->name }} {{ Auth::user()->lastname }}</h2>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -26,35 +26,49 @@
         <div class="menu_section">
         <h3>General</h3>
         <ul class="nav side-menu">
-            <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-                <li><a href="index.html">Dashboard</a></li>
-                <li><a href="index2.html">Dashboard2</a></li>
-                <li><a href="index3.html">Dashboard3</a></li>
-            </ul>
+
+            <li>
+                <a href="{{ route('dashboard') }}">
+                    <i class="fa fa-home"></i> Dashboard 
+                    <!-- <span class="fa fa-chevron-down"></span> -->
+                </a>
+                <!-- <ul class="nav child_menu">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="index2.html">Productos</a></li>
+                    <li><a href="index3.html">Usuarios</a></li>
+                </ul> -->
             </li>
-            <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-                <li><a href="form.html">General Form</a></li>
-                <li><a href="form_advanced.html">Advanced Components</a></li>
-                <li><a href="form_validation.html">Form Validation</a></li>
-                <li><a href="form_wizards.html">Form Wizard</a></li>
-                <li><a href="form_upload.html">Form Upload</a></li>
-                <li><a href="form_buttons.html">Form Buttons</a></li>
-            </ul>
+
+            <li>
+                <a>
+                    <i class="fa fa-users"></i> Usuarios 
+                    <!-- <span class="fas fa-user-friends"></span> -->
+                </a>
+                <!-- <ul class="nav child_menu">
+                    <li><a href="form.html">General Form</a></li>
+                    <li><a href="form_advanced.html">Advanced Components</a></li>
+                    <li><a href="form_validation.html">Form Validation</a></li>
+                    <li><a href="form_wizards.html">Form Wizard</a></li>
+                    <li><a href="form_upload.html">Form Upload</a></li>
+                    <li><a href="form_buttons.html">Form Buttons</a></li>
+                </ul> -->
             </li>
-            <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-                <li><a href="general_elements.html">General Elements</a></li>
-                <li><a href="media_gallery.html">Media Gallery</a></li>
-                <li><a href="typography.html">Typography</a></li>
-                <li><a href="icons.html">Icons</a></li>
-                <li><a href="glyphicons.html">Glyphicons</a></li>
-                <li><a href="widgets.html">Widgets</a></li>
-                <li><a href="invoice.html">Invoice</a></li>
-                <li><a href="inbox.html">Inbox</a></li>
-                <li><a href="calendar.html">Calendar</a></li>
-            </ul>
+            <li>    
+                <a>
+                    <i class="fa fa-inbox"></i>Productos 
+                    <!-- <span class="fa fa-chevron-down"></span> -->
+                </a>
+                <!-- <ul class="nav child_menu">
+                    <li><a href="general_elements.html">General Elements</a></li>
+                    <li><a href="media_gallery.html">Media Gallery</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="icons.html">Icons</a></li>
+                    <li><a href="glyphicons.html">Glyphicons</a></li>
+                    <li><a href="widgets.html">Widgets</a></li>
+                    <li><a href="invoice.html">Invoice</a></li>
+                    <li><a href="inbox.html">Inbox</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                </ul> -->
             </li>
             <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">

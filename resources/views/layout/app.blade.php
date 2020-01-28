@@ -6,6 +6,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csfr-token" content="{{ csrf_token() }}">
+        <meta name="routeName" content="{{ Route::currentRouteName() }}">
 
         <title>@yield('title') </title>
 
@@ -16,6 +18,9 @@
 
         <!-- Custom Theme Style -->
         <link  href="{{ url('/assets/css/custom.css') }}" rel="stylesheet">
+        
+        <!-- Mis Estilos -->
+        <link  href="{{ url('/assets/css/styles.css') }}" rel="stylesheet">
     </head>
 
     <body class="nav-md">
