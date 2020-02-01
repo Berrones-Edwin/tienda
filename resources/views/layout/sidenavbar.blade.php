@@ -40,7 +40,7 @@
             </li>
 
             <li>
-                <a>
+                <a href="{{ route('users.index') }}">
                     <i class="fa fa-users"></i> Usuarios 
                     <!-- <span class="fas fa-user-friends"></span> -->
                 </a>
@@ -54,7 +54,7 @@
                 </ul> -->
             </li>
             <li>    
-                <a>
+                <a href="{{ route('products.index') }}" >
                     <i class="fa fa-inbox"></i>Productos 
                     <!-- <span class="fa fa-chevron-down"></span> -->
                 </a>
